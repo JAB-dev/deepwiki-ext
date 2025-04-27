@@ -1,0 +1,29 @@
+/* DeepWiki Button Styles for GitHub Extension */
+
+/* Desktop Button Styles */
+#deepwiki-extension-button {
+    background-color: #0366d6 !important;
+    color: white !important;
+    border-color: #0256b0 !important;
+    box-shadow: 0 0 5px rgba(3, 102, 214, 0.5);
+    transition: all 0.3s ease;
+}
+
+#deepwiki-extension-button:hover {
+    box-shadow: 0 0 8px rgba(3, 102, 214, 0.8);
+    transform: translateY(-1px);
+}
+
+/* Mobile Button Styles (Used if you vertical aspect ratio slice your page) */
+#deepwiki-extension-button-mobile {
+    background-color: #0366d6 !important;
+    color: white !important;
+    border-color: #0256b0 !important;
+    box-shadow: 0 0 5px rgba(3, 102, 214, 0.5);
+    transition: all 0.3s ease;
+}
+
+#deepwiki-extension-button-mobile:hover {
+    box-shadow: 0 0 8px rgba(3, 102, 214, 0.8);
+    transform: translateY(-1px);
+}
