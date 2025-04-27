@@ -25,7 +25,7 @@ jobs:
         run: |
           mkdir -p release
           # Include version in zip filename
-          zip -r release/GitHub-DeepWiki-Extension-v${{ steps.get_version.outputs.VERSION }}.zip \
+          zip -r release/deepwiki-ext-v${{ steps.get_version.outputs.VERSION }}.zip \
             manifest.json \
             src/background/background.js \
             src/content/github-button.js \
@@ -36,7 +36,7 @@ jobs:
         if: github.event_name == 'push'
         uses: softprops/action-gh-release@v1
         with:
-          files: release/GitHub-DeepWiki-Extension-v${{ steps.get_version.outputs.VERSION }}.zip
+          files: release/deepwiki-ext-v${{ steps.get_version.outputs.VERSION }}.zip
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
@@ -46,6 +46,6 @@ jobs:
         with:
           tag_name: v${{ steps.get_version.outputs.VERSION }}
           name: Release v${{ steps.get_version.outputs.VERSION }}
-          files: release/GitHub-DeepWiki-Extension-v${{ steps.get_version.outputs.VERSION }}.zip
+          files: release/deepwiki-ext-v${{ steps.get_version.outputs.VERSION }}.zip
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
