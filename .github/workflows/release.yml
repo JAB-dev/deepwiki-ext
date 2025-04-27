@@ -25,22 +25,18 @@ jobs:
         run: |
           mkdir -p release
           # Include version in zip filename
-          zip -r release/ServalPriceExt-v${{ steps.get_version.outputs.VERSION }}.zip \
+          zip -r release/GitHub-DeepWiki-Extension-v${{ steps.get_version.outputs.VERSION }}.zip \
             manifest.json \
-            background.js \
-            contentscript.js \
-            options.html \
-            options.js \
-            styling.css \
-            fetchPrice.js \
-            index.html \
+            src/background/background.js \
+            src/content/github-button.js \
+            src/styles/button-styles.css \
             icons/
 
       - name: Upload Release (from tag)
         if: github.event_name == 'push'
         uses: softprops/action-gh-release@v1
         with:
-          files: release/ServalPriceExt-v${{ steps.get_version.outputs.VERSION }}.zip
+          files: release/GitHub-DeepWiki-Extension-v${{ steps.get_version.outputs.VERSION }}.zip
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
@@ -50,6 +46,6 @@ jobs:
         with:
           tag_name: v${{ steps.get_version.outputs.VERSION }}
           name: Release v${{ steps.get_version.outputs.VERSION }}
-          files: release/ServalPriceExt-v${{ steps.get_version.outputs.VERSION }}.zip
+          files: release/GitHub-DeepWiki-Extension-v${{ steps.get_version.outputs.VERSION }}.zip
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
