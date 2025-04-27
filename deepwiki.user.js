@@ -4,6 +4,8 @@
 // @version     1.0
 // @description  Adds a 'deepwiki' button to GitHub repo pages that opens the corresponding deepwiki page.
 // @author       JAB
+// @updateURL    https://github.com/JAB-dev/deepwiki-ext/raw/refs/heads/main/deepwiki.user.js
+// @downloadURL  https://github.com/JAB-dev/deepwiki-ext/raw/refs/heads/main/deepwiki.user.js
 // @match        https://github.com/*/*
 // @exclude      https://github.com/marketplace*
 // @exclude      https://github.com/settings*
