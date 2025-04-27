@@ -15,7 +15,7 @@ The GitHub Deepwiki Button is a Chrome extension that adds a 'deepwiki' button t
    ```
 2. Navigate to the project directory:
    ```
-   cd github-deepwiki-extension
+   cd deepwiki-ext
    ```
 3. Open Chrome and go to `chrome://extensions/`.
 4. Enable "Developer mode" in the top right corner.
