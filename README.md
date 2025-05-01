@@ -1,10 +1,10 @@
 # GitHub Deepwiki Button
 
 ## Overview
-The GitHub Deepwiki Button is a Chrome extension/Userscript that adds a 'deepwiki' button to GitHub repository pages. This button allows users to quickly access the corresponding deepwiki page for the repository they are viewing.
+The GitHub Deepwiki Button is a Chrome extension/Userscript that adds a 'Ask Deepwiki' button to GitHub repository pages. This button allows users to quickly access the corresponding deepwiki page for the repository they are viewing.
 
 ## Features
-- Adds a 'deepwiki' button to GitHub repository pages.
+- Adds an 'Ask Deepwiki' button to GitHub repository pages.
 - Opens the corresponding deepwiki page in a new tab.
 - Compatible with some of GitHub's dynamic content updates.
 
