@@ -3,7 +3,7 @@
   "name": "Ask DeepWiki, shortcut for GitHub",
   "version": "1.0.0",
   "description": "Adds an 'Ask DeepWiki' button to GitHub repository code pages that open the DeepWiki page with Ai documentation and chat",
-  "permissions": ["activeTab"],
+  "permissions": [],
   "background": {
     "service_worker": "src/background/background.js"
   },
