@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
-  "name": "Ask DeepWiki Ai Shortcut for GitHub",
+  "name": "Ask DeepWiki, shortcut for GitHub",
   "version": "1.0.0",
-  "description": "Adds a 'DeepWiki' button to GitHub repository pages to quickly access DeepWiki resources",
+  "description": "Adds an 'Ask DeepWiki' button to GitHub repository code pages that open the DeepWiki page with Ai documentation and chat",
   "permissions": ["activeTab"],
   "background": {
     "service_worker": "src/background/background.js"
@@ -41,6 +41,6 @@
       "48": "icons/icon48.png",
       "128": "icons/icon128.png"
     },
-    "default_title": "GitHub DeepWiki"
+    "default_title": "DeepWiki shortcut Github"
   }
 }
